@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>What is Meteor</title>
+	<link rel="stylesheet" href="lib/css/reveal.css">
+	<link rel="stylesheet" href="lib/css/black.css">
+	<style>
+		.reveal h1, .reveal h2, .reveal h3 {
+			text-transform: none;
+		}
+		.text_align_left {
+			text-align: left;
+		}
+		.text_align_right {
+			text-align: right;
+		}
+		.reveal .font_weight_normal {
+			font-weight: normal;
+		}
+	</style>
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>What is Meteor.js ?</h1>
+				<p class="text_align_right">
+					<em><a href="https://github.com/uniquexiaobai">@uniquexiaobai</a></em>
+				</p>
+			</section>
+			
+			<section>
+				<section>
+					<h2>How to start a web application</h2>
+					<ul>
+						<li class="fragment">install a database</li>
+						<li class="fragment">configure a web server</li>
+						<li class="fragment">choose a server side language / framework</li>
+						<li class="fragment">choose JavaScript as the client side language</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>How to start it with Meteor</h2>
+					<ul>
+						<li class="fragment">install meteor</li>
+						<li class="fragment">Go !</li>
+					</ul>
+				</section>
+			</section>
+			
+			<section>
+				<p class="text_align_left">A full-stack JavaScript platform for developing modern web and mobile applications.<br><br>The fastest way to build JavaScript Apps</p>
+				<p class="text_align_right"><a href="https://meteor.com">https://meteor.com</a></p>
+			</section>
+
+			<section>
+				<h2>Platform support</h2>
+				<p>
+					<img src="images/platform.png" /> 
+				</p>
+			</section>
+			
+			<section>
+				<h2>A stack of technologies</h2>
+				<p>
+					<img src="images/javascript.png" />
+					<img src="images/nodejs.png" />
+					<img src="images/npm.png" />
+					<img src="images/mongodb.png" />
+					<img src="images/cordoval.png" />
+					<img src="images/jquery.png" />
+					<img src="images/handlebars.png" />
+					<img src="images/react.png" />
+					<img src="images/angular.png" />
+				</p>
+				<p>and more...</p>
+			</section>
+			
+			<section>	
+				<section>
+					<h2>Traditional web applications</h2>
+					<p>
+						<img src="images/arc1.png" /> 
+					</p>
+				</section>
+			
+				<section>
+					<h2>Meteor web applications</h2>
+					<p>
+						<img src="images/arc2.png" /> 
+					</p>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Seven principles of Meteor</h2>
+					<ul>
+						<li class="fragment">One language</li>
+						<li class="fragment">Database Everywhere</li>
+						<li class="fragment">Data on the Wire</li>
+						<li class="fragment">Full Stack Reactivity</li>
+						<li class="fragment">Latency Compensation</li>
+						<li class="fragment">Embrace the Ecosystem</li>
+						<li class="fragment">Simplicity Equals Productivity</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>One language</h2>
+					<ul>
+						<li>write your entire app in pure JavaScript/ECMA2015 in all environments: server、browser、mobile</li>
+						<li>code runs on the client, inside a web browser or Cordova mobile app</li>
+						<li>code runs on the server, inside a Node.js container</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Database Everywhere</h2>
+					<ul>
+						<li>on the server (MongoDB)</li>
+						<li>on the client/in memory (MiniMongo)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Data on the Wire</h2>
+					<ul>
+						<li>no HTML rendered on the server</li>
+						<li>json sent to the browser</li>
+						<li>the browser renders templates</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Full Stack Reactivity</h2>
+					<ul>
+						<li>change data & everything updates automatically</li>
+						<li>changes are broadcasted to all clients</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Latency Compensation</h2>
+					<ul>
+						<li>all data operations take place in memory immediately first (MiniMongo)</li>
+						<li>callback to server is asynchronous</li>
+						<li>what happens if the server rejects their request or executes it differently ?</li>
+						<li>the client is patched up with what actually happened</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Embrace the Ecosystem</h2>
+					<ul>
+						<li>open source in GitHub</li>
+						<li>bringing the best parts of the extremely active JavaScript community to you</li>
+						<li>Atmosphere & npm</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Simplicity Equals Productivity</h2>
+					<ul>
+						<li>clean and simple APIs</li>
+						<li>environment configuration</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Distributed Data Protocol</h2>
+					<ul>
+						<li>It is a protocol based on JSON</li>
+						<li>Meteor uses it to communicate between client and server</li>
+						<p class="text_align_right">
+							<a href="Meteor has implemented both client and server implementations for DDP">Introduction to DDP</a>
+						</p>
+					</ul>
+				</section>
+
+				<section>
+					<h2 class="font_weight_normal">Handling Remote Procedure Calls</h2>
+					<p>
+						<img src="images/ddp1.png" />
+						<img src="images/ddp2.png" style="margin: 0" />
+					</p>
+				</section>
+
+				<section>
+					<h2 class="font_weight_normal">Managing Data</h2>
+					<p>
+						<img src="images/ddp3.png" />
+						<img src="images/ddp4.png" style="margin: 0" />
+					</p>
+				</section>
+			</section>
+
+			<section>
+				<h2>Development experienc</h2>
+				<ul>
+					<li>only need to install Meteor, you have all the environment.</li>
+					<li>meteor build tool automatically detects any relevant file changes & recompiles the changes, restarting client or server</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Pain point</h2>
+				<ul>
+					<li>meteor upgrade brings a lot of problems</li>
+					<li>delay of recompiles or refresh</li>
+					<li>meteor mobile</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>links</h2>
+				<ul>
+					<li>Meteor: <a href="https://meteor.com">meteor.com</a></li>
+					<li>Node.js: <a href="https://nodejs.org">nodejs.org</a></li>
+					<li>NPM: <a href="https://www.npmjs.com/">npmjs.com</a></li>
+					<li>Atmosphere: <a href="https://atmospherejs.com/">atmospherejs.com</a></li>
+					<li>MongoDB: <a href="https://www.mongodb.com/">mongodb.com</a></li>
+					<li>Cordova: <a href="http://cordova.apache.org/">cordova.apache.org</a></li>
+					<li>jQuery: <a href="http://jquery.com/">jquery.com</a></li>
+					<li>Handlebars: <a href="http://handlebarsjs.com/">handlebarsjs.com</a></li>
+					<li>Angular: <a href="https://angularjs.org/">angularjs.org</a></li>
+					<li>React: <a href="https://nodejs.org">nodejs.org</a></li>
+				</ul>
+			</section>
+
+			<section>
+			<h3>If you decide to learn meteor, <br>make sure you are true to it.</h3>
+			</section>
+				
+			<section>
+				<h2>Questions?</h2>
+				<p>
+					<small><em><a href="https://github.com/uniquexiaobai">@uniquexiaobai</a></em></small>
+				</p>
+			</section>
+		</div>
+	</div>
+
+	
+	<script src="lib/js/reveal.js"></script>
+	<script>
+		Reveal.initialize({
+			slideNumber: true,
+			mouseWheel: true,
+			transition: 'convex',
+			transitionSpeed: 'slow'
+		});
+	</script>
+</body>
+</html>
